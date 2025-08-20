@@ -1,0 +1,87 @@
+/* div{
+  color: red;
+} */
+
+/* @media (min-width: 640px) {
+  .info-block {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+  } */
+/* } */
+body{
+  background-color: black;
+}
+
+.applicant{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .applicant {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.text1 {
+  font-size: 1rem;         /* text-base */
+  line-height: 1.75;       /* /7 */
+  font-weight: 600;        /* font-semibold */
+  color: #ffffff;          /* text-white */
+}
+.intext1{
+    margin-top: 0.25rem;       /* mt-1 */
+  max-width: 42rem;          /* max-w-2xl */
+  font-size: 0.875rem;       /* text-sm */
+  line-height: 1.5rem;       /* /6 */
+  color: #9ca3af;            /* text-gray-400 */
+
+}
+.lol {
+  margin-top: 1.5rem;                     /* mt-6 */
+  border-top-width: 1px;                  /* border-t */
+  border-top-style: solid;               /* لازم تحدد نوع الحد */
+  border-top-color: rgba(255, 255, 255, 0.1); /* border-white/10 */
+}
+dl > * + *{
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.title {
+  padding-left: 1rem;       /* px-4 */
+  padding-right: 1rem;
+  padding-top: 1.5rem;      /* py-6 */
+  padding-bottom: 1.5rem;
+}
+
+/* عند الشاشات بعرض 640px وما فوق */
+@media (min-width: 640px) {
+  .title {
+    display: grid;                          /* sm:grid */
+    grid-template-columns: repeat(3, 1fr);  /* sm:grid-cols-3 */
+    gap: 1rem;                              /* sm:gap-4 */
+    padding-left: 0;                        /* sm:px-0 */
+    padding-right: 0;
+  }
+}
+.Applicant-label {
+  font-size: 0.875rem;       /* text-sm */
+  line-height: 1.5rem;       /* /6 */
+  font-weight: 500;          /* font-medium */
+  color: #f3f4f6;            /* text-gray-100 */
+}
+.Description-text {
+  margin-top: 0.25rem;        /* mt-1 */
+  font-size: 0.875rem;        /* text-sm */
+  line-height: 1.5rem;        /* /6 */
+  color: #9ca3af;             /* text-gray-400 */
+}
+
+@media (min-width: 640px) {
+  .Description-text {
+    grid-column: span 2 / span 2;  /* sm:col-span-2 */
+    margin-top: 0;                 /* sm:mt-0 */
+  }
+}
